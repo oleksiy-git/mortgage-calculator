@@ -24,32 +24,32 @@ function calculate() {
   interestRate = parseFloat(interestRate);
 
   // mortgage calculaiton
-  LoanAmount = housePrice - yourDeposit;
-  LoanAmount = parseFloat(LoanAmount);
+  loanAmount = housePrice - yourDeposit;
+  loanAmount = parseFloat(loanAmount);
 
   termInMonth = mortgageTerm * monthsInYear;
 
-  monthlyBody = LoanAmount / termInMonth;
+  monthlyBody = loanAmount / termInMonth;
   monthlyBody = parseFloat(monthlyBody);
 
   initialMonthlyInterest = Math.round(
-    ((LoanAmount * (interestRate / 100)) / daysInYear) * daysInMonth
+    ((loanAmount * (interestRate / 100)) / daysInYear) * daysInMonth
   );
 
   initialMonthlyPayment = monthlyBody + initialMonthlyInterest;
 
   // results
-  document.getElementById("loan-amount").innerHTML = LoanAmount;
+  document.getElementById("loan-amount").innerHTML = loanAmount.toFixed(2);
 
   document.getElementById(
     "initial-monthly-payment"
-  ).innerHTML = initialMonthlyPayment;
+  ).innerHTML = initialMonthlyPayment.toFixed(2);
 
-  document.getElementById("monthly-body").innerHTML = monthlyBody;
+  document.getElementById("monthly-body").innerHTML = monthlyBody.toFixed(2);
 
   document.getElementById(
     "initial-monthly-interest"
-  ).innerHTML = initialMonthlyInterest;
+  ).innerHTML = initialMonthlyInterest.toFixed(2);
 
   // add a note
   document.getElementById("note").innerHTML =

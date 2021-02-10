@@ -13,8 +13,8 @@ header {
   background-attachment: fixed;
 }
 #logo {
-  font-weight: 700;
-  font-size: 1.6rem;
+  font-weight: 600;
+  font-size: 1.4rem;
   color: #f0f0ff;
   /* font-family: "Roboto Condensed", sans-serif; */
 }
@@ -47,8 +47,8 @@ p {
 
 .main-container {
   height: auto;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
   background-color: #ffffff;
   font-weight: 600;
   color: #03506f;
@@ -113,6 +113,9 @@ button:hover {
   color: #2dc3ce;
   /* position: absolute; */
 }
+.results-sub-text {
+  color: #7372b3;
+}
 #note {
   /* margin-top: 20px; */
   color: #d1d1d3;
@@ -122,6 +125,6 @@ footer {
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
-  color: #434380;
+  color: #434285;
   font-size: 0.8rem;
 }

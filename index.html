@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mortgage Calculator</title>
+    <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -21,7 +22,7 @@
       <a href="index.html"><span id="logo">Mortgage Calculator</span></a>
       <nav>
         <ul class="nav__links">
-          <li><a href="#">Home</a></li>
+          <!-- <li><a href="#">Home</a></li> -->
           <li><a href="#">About</a></li>
         </ul>
       </nav>
@@ -88,22 +89,27 @@
             </div>
             <button onclick="calculate()">Calculate</button>
           </div>
+
           <div class="right">
+            <!-- Calculated results -->
             <p>Loan Amount:<span id="loan-amount" class="results"></span></p>
             <p>
-              Initial Patment (monthly):<span
+              Initial Patment
+              <span class="results-sub-text">(monthly)</span>:<span
                 id="initial-monthly-payment"
                 class="results"
               ></span>
             </p>
             <p>
-              Mortgage Body (monthly):<span
+              Mortgage Body
+              <span class="results-sub-text">(monthly)</span>:<span
                 id="monthly-body"
                 class="results"
               ></span>
             </p>
             <p>
-              Initial Interest Rate (monthly):<span
+              Initial Interest Rate
+              <span class="results-sub-text">(monthly)</span>:<span
                 id="initial-monthly-interest"
                 class="results"
               ></span>
